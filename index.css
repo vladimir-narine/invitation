@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Armenia";
+  src: url(./fonts/ArmCoronetU.ttf);
+}
+@font-face {
+  font-family: "Armenia2";
+  src: url(./fonts/SHK_Dzeragir.otf);
+}
+@font-face {
+  font-family: "Russian";
+  src: url(./fonts/GreatVibes-Regular.ttf);
+}
+
+body {
+  font-family: "Armenia2", "Russian";
+  text-align: center;
+  background-color: #e7e7e7;
+  color: #505050;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(./images/1.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #323232;
+}
+.names {
+  font-size: clamp(2rem, 12vw, 4rem);
+  text-shadow: #e5e7eb 1px 0 10px;
+  margin-top: 20px;
+}
+.date {
+  font-size: clamp(1rem, 15vw, 5rem);
+  margin-top: 20px;
+  text-shadow: #e5e7eb 1px 0 10px;
+}
+.text {
+  font-size: clamp(1rem, 7vw, 3rem);
+  padding: 0 20px;
+}
+
+.plan-title {
+  font-size: clamp(1rem, 10vw, 4rem);
+}
+.place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.place-photo {
+  max-width: 400px;
+}
+.place-photo img {
+  width: 100%;
+}
+.city {
+  font-size: clamp(1.5rem, 6.5vw, 3rem);
+}
+.address {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+.how-to-reach {
+  background: none;
+  padding: 12px 24px;
+  color: #505050;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  border: 2px solid #505050;
+}
+.line {
+  width: 200px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #505050;
+  margin: 50px 0;
+}
+.time {
+  color: #b69779;
+  margin-top: 20px;
+  font-size: clamp(3rem, 6.5vw, 3rem);
+}
+
+.countdown-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background: linear-gradient(#00000000, #000000a5),
+    url(./images/2.JPEG) no-repeat;
+  background-size: cover;
+  background-position:top;
+  color: #e5e7eb;
+  margin-top: 50px;
+  width: 100%;
+  height: 65vh;
+}
+
+.countdown-title {
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
+  text-align: start;
+}
+#countdown {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-family: "Armenia";
+  margin-bottom: 50px;
+}
+#countdown p {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 8vw, 2.5rem);
+  font-family: "Armenia2";
+}
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+#countdown span {
+  font-size: clamp(1rem, -1.5rem + 10vw, 2rem);
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.confirm {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    background-size: contain;
+  }
+  .countdown-sec {
+    background-size: contain;
+  }
+}
+@media screen and (max-width: 600px) {
+  .layout {
+    gap: 10px;
+  }
+  .text {
+    margin: 20px 0;
+  }
+
+}
+
