@@ -63,6 +63,7 @@ header {
 }
 
 .plan-title {
+  margin: 15px 0;
   font-size: clamp(1rem, 10vw, 4rem);
 }
 .place {
@@ -114,7 +115,7 @@ header {
   background-size: cover;
   background-position:top;
   color: #e5e7eb;
-  margin-top: 50px;
+  margin-bottom: 50px;
   width: 100%;
   height: 65vh;
 }
